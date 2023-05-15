@@ -1,6 +1,5 @@
 WIDTH = 400
 HEIGHT = 400
-
 ROWS = 3
 COLS = 3
 
