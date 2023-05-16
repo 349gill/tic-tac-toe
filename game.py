@@ -16,12 +16,12 @@ screen.fill(BG_COLOR)
 
 
 class Computer:
-    def __init__(self, lvl=1, player=2):
+    def __init__(self, lvl=1, player=1):
         self.lvl = lvl
         self.player = player
 
     def rand(self, main_board):
-        time.sleep(0.75)
+        # time.sleep(0.75)
         return main_board.get_vac_sqrs()[random.randrange(0, len(main_board.get_vac_sqrs()))]
 
     def minimax(self, board, maximizing):
@@ -107,7 +107,7 @@ class Position:
 class Board:
     def __init__(self):
         self.position = Position()
-        self.player = 1
+        self.player = 2
         self.computer = Computer()
         self.gamemode = 'ai'
         self.running = True
